@@ -30,7 +30,6 @@ const Weather = () => {
 				.then((result) => {
 					setDailyData(result.list.filter((reading) => reading.dt_txt.includes('18:00:00')));
 					setForecast(result.list);
-					console.log(result.list);
 				});
 		}
 	};
